@@ -1,0 +1,863 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./image/favicon.png" type="image/x-icon" />
+    <title>DevFolio</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- font-awesome  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- custom css  -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body class="bg-[#F5F5F5]">
+    <!-- header area start  -->
+    <header
+      id="header"
+      class="w-full bg-transparent fixed left-0 z-[1000] duration-300"
+    >
+      <div class="w-[90%] md:w-4/5 mx-auto flex items-center justify-between">
+        <div class="">
+          <h2 class="text-2xl md:text-3xl font-semibold text-white">
+            DevFolio
+          </h2>
+        </div>
+        <nav class="">
+          <button id="mobile_icon" class="text-white md:hidden">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-7 h-7"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+              />
+            </svg>
+          </button>
+
+          <ul
+            id="main_menu"
+            class="md:flex md:relative md:top-0 gap-5 md:h-16 absolute bg-black md:bg-transparent w-full h-[550px] left-0 top-12 p-4 hidden pl-14 md:pl-0"
+          >
+            <li>
+              <a
+                class="uppercase text-white text-xl md:text-[17px] md:font-semibold block md:inline mb-4 hover:ml-3 md:ml-0 md:hover:ml-0 hover:duration-700 md:relative md:after:absolute md:after:content-[''] md:after:left-0 md:after:bottom-[-5px] md:after:h-[2px] md:after:w-0 md:after:bg-white md:hover:after:w-full md:after:duration-300 md:after:w-full"
+                href="#"
+                >home</a
+              >
+            </li>
+            <li>
+              <a
+                class="uppercase text-white text-xl md:text-[17px] md:font-semibold block md:inline mb-4 hover:ml-3 md:ml-0 md:hover:ml-0 hover:duration-700 md:relative md:after:absolute md:after:content-[''] md:after:left-0 md:after:bottom-[-5px] md:after:h-[2px] md:after:w-0 md:after:bg-white md:hover:after:w-full md:after:duration-300"
+                href="#about"
+                >about</a
+              >
+            </li>
+            <li>
+              <a
+                class="uppercase text-white text-xl md:text-[17px] md:font-semibold block md:inline mb-4 hover:ml-3 md:ml-0 md:hover:ml-0 hover:duration-700 md:relative md:after:absolute md:after:content-[''] md:after:left-0 md:after:bottom-[-5px] md:after:h-[2px] md:after:w-0 md:after:bg-white md:hover:after:w-full md:after:duration-300"
+                href="#service"
+                >services</a
+              >
+            </li>
+            <li>
+              <a
+                class="uppercase text-white text-xl md:text-[17px] md:font-semibold block md:inline mb-4 hover:ml-3 md:ml-0 md:hover:ml-0 hover:duration-700 md:relative md:after:absolute md:after:content-[''] md:after:left-0 md:after:bottom-[-5px] md:after:h-[2px] md:after:w-0 md:after:bg-white md:hover:after:w-full md:after:duration-300"
+                href="#work"
+                >work</a
+              >
+            </li>
+            <li>
+              <a
+                class="uppercase text-white text-xl md:text-[17px] md:font-semibold block md:inline mb-4 hover:ml-3 md:ml-0 md:hover:ml-0 hover:duration-700 md:relative md:after:absolute md:after:content-[''] md:after:left-0 md:after:bottom-[-5px] md:after:h-[2px] md:after:w-0 md:after:bg-white md:hover:after:w-full md:after:duration-300"
+                href="#blog"
+                >blog</a
+              >
+            </li>
+            <li>
+              <a
+                class="uppercase text-white text-xl md:text-[17px] md:font-semibold block md:inline mb-4 hover:ml-3 md:ml-0 md:hover:ml-0 hover:duration-700 md:relative md:after:absolute md:after:content-[''] md:after:left-0 md:after:bottom-[-5px] md:after:h-[2px] md:after:w-0 md:after:bg-white md:hover:after:w-full md:after:duration-300"
+                href="#portfolio"
+                >PORTFOLIO</a
+              >
+            </li>
+            <li>
+              <a
+                class="uppercase text-white text-xl md:text-[17px] md:font-semibold block md:inline mb-4 hover:ml-3 md:ml-0 md:hover:ml-0 hover:duration-700 md:relative md:after:absolute md:after:content-[''] md:after:left-0 md:after:bottom-[-5px] md:after:h-[2px] md:after:w-0 md:after:bg-white md:hover:after:w-full md:after:duration-300"
+                href="#contact"
+                >contact</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!-- header area end  -->
+    <!-- hero section area start  -->
+    <section
+      class="bg-[url('./image/hero-bg.jpg')] bg-no-repeat bg-cover bg-center bg-fixed"
+    >
+      <div
+        class="flex items-center justify-center h-screen relative z-[1] after:absolute after:content-[''] after:left-0 after:top-0 after:h-full after:w-full after:bg-black after:opacity-50 after:z-[-1]"
+      >
+        <div class="">
+          <h2
+            class="text-5xl text-center md:text-7xl text-white font-semibold mb-5 md:font-semibold mx-3"
+          >
+            I am Morgan Freeman
+          </h2>
+          <h3 class="text-3xl md:text-5xl text-white font-semibold text-center">
+            <span class="auto-type pb-1"></span>
+          </h3>
+        </div>
+      </div>
+    </section>
+    <!-- hero section area start  -->
+    <!-- about section start  -->
+    <section id="about">
+      <div class="container w-[90%] md:w-4/5 mx-auto my-20">
+        <div class="bg-white py-10 px-5">
+          <!-- img and info  -->
+          <div class="md:flex">
+            <div class="md:w-1/2 md:mr-10">
+              <div class="md:flex">
+                <!-- image  -->
+                <img
+                  class="rounded-md mb-7 md:mr-10"
+                  src="./image/testimonial-2.jpg"
+                  alt="about image"
+                />
+                <div class="">
+                  <h3 class="mb-2 md:text-xl">
+                    <span class="font-semibold">Name:</span> Morgan Freeman
+                  </h3>
+                  <h3 class="mb-2 md:text-xl">
+                    <span class="font-semibold">Profile:</span> full stack
+                    developer
+                  </h3>
+                  <h3 class="mb-2 md:text-xl">
+                    <span class="font-semibold">Email:</span>
+                    contact@example.com
+                  </h3>
+                  <h3 class="mb-2 md:text-xl">
+                    <span class="font-semibold">Phone:</span> (617) 557-0089
+                  </h3>
+                </div>
+              </div>
+              <!-- skill area  -->
+              <div class="">
+                <h2 class="text-3xl font-semibold my-5">Skill</h2>
+                <!-- single skill progress  -->
+                <div class="flex justify-between pb-3">
+                  <h3>HTML</h3>
+                  <h3>85%</h3>
+                </div>
+                <div class="h-3 w-full bg-gray-400 mb-6">
+                  <div class="bg-[#0078FF] h-full w-[85%]"></div>
+                </div>
+                <!--end of single skill progress  -->
+                <!-- single skill progress  -->
+                <div class="flex justify-between pb-3">
+                  <h3>CSS</h3>
+                  <h3>75%</h3>
+                </div>
+                <div class="h-3 w-full bg-gray-400 mb-6">
+                  <div class="bg-[#0078FF] h-full w-[75%]"></div>
+                </div>
+                <!--end of single skill progress  -->
+                <!-- single skill progress  -->
+                <div class="flex justify-between pb-3">
+                  <h3>Wordpress</h3>
+                  <h3>50%</h3>
+                </div>
+                <div class="h-3 w-full bg-gray-400 mb-6">
+                  <div class="bg-[#0078FF] h-full w-[50%]"></div>
+                </div>
+                <!--end of single skill progress  -->
+                <!-- single skill progress  -->
+                <div class="flex justify-between pb-3">
+                  <h3>JAVASCRIPT</h3>
+                  <h3>20%</h3>
+                </div>
+                <div class="h-3 w-full bg-gray-400 mb-6">
+                  <div class="bg-[#0078FF] h-full w-[20%]"></div>
+                </div>
+                <!--end of single skill progress  -->
+              </div>
+            </div>
+            <!-- about area start  -->
+            <div class="md:w-1/2">
+              <h2 class="text-3xl font-semibold mb-2">About me</h2>
+              <div class="bg-[#0078FF] h-1 w-24"></div>
+              <p class="py-7 text-xl text-neutral-600">
+                Curabitur non nulla sit amet nisl tempus convallis quis ac
+                lectus. Curabitur arcu erat, accumsan id imperdiet et, porttitor
+                at sem. Praesent sapien massa, convallis a pellentesque nec,
+                egestas non nisi. Nulla porttitor accumsan tincidunt.
+              </p>
+              <p class="pb-7 text-xl text-neutral-600">
+                Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.
+                Vivamus suscipit tortor eget felis porttitor volutpat.
+                Vestibulum ac diam sit amet quam vehicula elementum sed sit amet
+                dui. porttitor at sem.
+              </p>
+
+              <p class="pb-7 text-xl text-neutral-600">
+                Nulla porttitor accumsan tincidunt. Quisque velit nisi, pretium
+                ut lacinia in, elementum id enim. Nulla porttitor accumsan
+                tincidunt. Mauris blandit aliquet elit, eget tincidunt nibh
+                pulvinar a.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- about section end -->
+    <!-- service section start  -->
+    <section id="service" class="pb-20">
+      <div class="w-[90%] mx-auto md:w-4/5">
+        <div class="">
+          <h2 class="uppercase text-5xl font-bold text-center">services</h2>
+          <p class="py-4 text-center">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+          </p>
+          <div class="bg-[#0078FF] h-1 w-24 mx-auto mb-16"></div>
+        </div>
+        <!-- service box area  -->
+        <div class="md:grid md:grid-cols-3 md:gap-10">
+          <!-- service box  -->
+          <div class="bg-white rounded-xl px-5 py-8 mb-10 md:mb-0 group">
+            <div
+              class="text-center text-black text-3xl leading-[95px] h-28 w-28 border-8 border-[#0078FF] rounded-full mx-auto group-hover:bg-[#0078FF] group-hover:border-[#CDE1F8] duration-500 group-hover:text-white"
+            >
+              <i class="fa-solid fa-briefcase"></i>
+            </div>
+            <h3 class="text-2xl font-semibold text-center my-4">WEB DESIGN</h3>
+            <p class="text-center text-gray-500">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni
+              adipisci eaque autem fugiat! Quia, provident vitae! Magni tempora
+              perferendis eum non provident.
+            </p>
+          </div>
+          <!--end of service box  -->
+          <!-- service box  -->
+          <div class="bg-white rounded-xl px-5 py-8 mb-10 md:mb-0 group">
+            <div
+              class="text-center text-black text-3xl leading-[95px] h-28 w-28 border-8 border-[#0078FF] rounded-full mx-auto group-hover:bg-[#0078FF] group-hover:border-[#CDE1F8] duration-500 group-hover:text-white"
+            >
+              <i class="fa-regular fa-rectangle-list"></i>
+            </div>
+            <h3 class="text-2xl font-semibold text-center my-4">
+              WEB DEVELOPMENT
+            </h3>
+            <p class="text-center text-gray-500">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni
+              adipisci eaque autem fugiat! Quia, provident vitae! Magni tempora
+              perferendis eum non provident.
+            </p>
+          </div>
+          <!--end of service box  -->
+          <!-- service box  -->
+          <div class="bg-white rounded-xl px-5 py-8 mb-10 md:mb-0 group">
+            <div
+              class="text-center text-black text-3xl leading-[95px] h-28 w-28 border-8 border-[#0078FF] rounded-full mx-auto group-hover:bg-[#0078FF] group-hover:border-[#CDE1F8] duration-500 group-hover:text-white"
+            >
+              <i class="fa-solid fa-chart-simple"></i>
+            </div>
+            <h3 class="text-2xl font-semibold text-center my-4">PHOTOGRAPHY</h3>
+            <p class="text-center text-gray-500">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni
+              adipisci eaque autem fugiat! Quia, provident vitae! Magni tempora
+              perferendis eum non provident.
+            </p>
+          </div>
+          <!--end of service box  -->
+          <!-- service box  -->
+          <div class="bg-white rounded-xl px-5 py-8 mb-10 md:mb-0 group">
+            <div
+              class="text-center text-black text-3xl leading-[95px] h-28 w-28 border-8 border-[#0078FF] rounded-full mx-auto group-hover:bg-[#0078FF] group-hover:border-[#CDE1F8] duration-500 group-hover:text-white"
+            >
+              <i class="fa-solid fa-binoculars"></i>
+            </div>
+            <h3 class="text-2xl font-semibold text-center my-4">
+              RESPONSIVE DESIGN
+            </h3>
+            <p class="text-center text-gray-500">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni
+              adipisci eaque autem fugiat! Quia, provident vitae! Magni tempora
+              perferendis eum non provident.
+            </p>
+          </div>
+          <!--end of service box  -->
+          <!-- service box  -->
+          <div class="bg-white rounded-xl px-5 py-8 mb-10 md:mb-0 group">
+            <div
+              class="text-center text-black text-3xl leading-[95px] h-28 w-28 border-8 border-[#0078FF] rounded-full mx-auto group-hover:bg-[#0078FF] group-hover:border-[#CDE1F8] duration-500 group-hover:text-white"
+            >
+              <i class="fa-regular fa-sun"></i>
+            </div>
+            <h3 class="text-2xl font-semibold text-center my-4">
+              GRAPHIC DESIGN
+            </h3>
+            <p class="text-center text-gray-500">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni
+              adipisci eaque autem fugiat! Quia, provident vitae! Magni tempora
+              perferendis eum non provident.
+            </p>
+          </div>
+          <!--end of service box  -->
+          <!-- service box  -->
+          <div class="bg-white rounded-xl px-5 py-8 mb-10 md:mb-0 group">
+            <div
+              class="text-center text-black text-3xl leading-[95px] h-28 w-28 border-8 border-[#0078FF] rounded-full mx-auto group-hover:bg-[#0078FF] group-hover:border-[#CDE1F8] duration-500 group-hover:text-white"
+            >
+              <i class="fa-regular fa-calendar-check"></i>
+            </div>
+            <h3 class="text-2xl font-semibold text-center my-4">
+              MARKETING SERVICES
+            </h3>
+            <p class="text-center text-gray-500">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni
+              adipisci eaque autem fugiat! Quia, provident vitae! Magni tempora
+              perferendis eum non provident.
+            </p>
+          </div>
+          <!--end of service box  -->
+        </div>
+      </div>
+    </section>
+    <!-- service section end -->
+    <!-- counter section start  -->
+    <section
+      id="work"
+      class="py-20 bg-[url('./image/counters-bg.jpg')] bg-fixed bg-no-repeat bg-center bg-cover z-[1] relative after:absolute after:content-[''] after:left-0 after:top-0 after:h-full after:w-full after:bg-[#0078ff] after:opacity-60 after:z-[-1]"
+    >
+      <div class="w-[90%] mx-auto md:w-4/5">
+        <div class="md:grid md:items-center md:grid-cols-4 md:gap-5">
+          <!-- counter  -->
+          <div class="text-center">
+            <i
+              class="fa-solid fa-check h-20 w-20 text-center leading-[60px] text-2xl text-white border-8 border-[#CDE1F8] rounded-full"
+            ></i>
+            <span class="text-3xl text-white py-2 block">450</span>
+            <h3 class="text-lg text-white pb-5 md:pb-0">WORKS COMPLETED</h3>
+          </div>
+          <!-- counter  -->
+          <div class="text-center">
+            <i
+              class="fa-solid fa-book h-20 w-20 text-center leading-[60px] text-2xl text-white border-8 border-[#CDE1F8] rounded-full"
+            ></i>
+            <span class="text-3xl text-white py-2 block">25</span>
+            <h3 class="text-lg text-white pb-5 md:pb-0">YEARS OF EXPERIENCE</h3>
+          </div>
+          <!-- counter  -->
+          <div class="text-center">
+            <i
+              class="fa-solid fa-user-group h-20 w-20 text-center leading-[60px] text-2xl text-white border-8 border-[#CDE1F8] rounded-full"
+            ></i>
+            <span class="text-3xl text-white py-2 block">550</span>
+            <h3 class="text-lg text-white pb-5 md:pb-0">TOTAL CLIENTS</h3>
+          </div>
+          <!-- counter  -->
+          <div class="text-center">
+            <i
+              class="fa-solid fa-award h-20 w-20 text-center leading-[60px] text-2xl text-white border-8 border-[#CDE1F8] rounded-full"
+            ></i>
+            <span class="text-3xl text-white py-2 block">48</span>
+            <h3 class="text-lg text-white md:pb-0">AWARD WON</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- counter section end -->
+    <!-- portfolio section start  -->
+    <section id="portfolio" class="py-20">
+      <div class="w-[90%] mx-auto md:w-4/5">
+        <div class="">
+          <h2 class="text-5xl font-bold text-center text-[#1d1d1d]">
+            PORTFOLIO
+          </h2>
+          <p class="py-4 text-center">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+          </p>
+          <div class="bg-[#0078FF] h-1 w-24 mx-auto mb-16"></div>
+        </div>
+        <!-- portfolio card  -->
+        <div class="md:grid md:grid-cols-3 md:gap-8">
+          <!-- single card  -->
+          <div class="bg-white group mb-10 md:mb-0">
+            <div class="overflow-hidden">
+              <img
+                class="w-full group-hover:scale-125 duration-700"
+                src="./image/work-1.jpg"
+                alt="portfolio image"
+              />
+            </div>
+            <div class="px-5 md:flex md:items-end md:justify-between md:pb-5">
+              <div class="">
+                <h3 class="text-xl font-semibold pt-6">Lorem impsum dolor</h3>
+                <h4 class="py-2 text-sm">
+                  <span class="text-blue-600">Web Design</span> / 18 Sep. 2018
+                </h4>
+              </div>
+              <!-- icon  -->
+              <div class="text-right pb-5 md:pb-2">
+                <a href="#"
+                  ><i
+                    class="fa-solid fa-plus text-3xl text-blue-600 border-2 border-blue-600 rounded-full h-10 w-10 text-center"
+                  ></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <!-- end single card  -->
+          <!-- single card  -->
+          <div class="bg-white group mb-10 md:mb-0">
+            <div class="overflow-hidden">
+              <img
+                class="w-full group-hover:scale-125 duration-700"
+                src="./image/work-2.jpg"
+                alt="portfolio image"
+              />
+            </div>
+            <div class="px-5 md:flex md:items-end md:justify-between md:pb-5">
+              <div class="">
+                <h3 class="text-xl font-semibold pt-6">Loreda Cuno Nere</h3>
+                <h4 class="py-2 text-sm">
+                  <span class="text-blue-600">Web Design</span> / 18 Sep. 2018
+                </h4>
+              </div>
+              <!-- icon  -->
+              <div class="text-right pb-5 md:pb-2">
+                <a href="#"
+                  ><i
+                    class="fa-solid fa-plus text-3xl text-blue-600 border-2 border-blue-600 rounded-full h-10 w-10 text-center"
+                  ></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <!-- end single card  -->
+          <!-- single card  -->
+          <div class="bg-white group mb-10 md:mb-0">
+            <div class="overflow-hidden">
+              <img
+                class="w-full group-hover:scale-125 duration-700"
+                src="./image/work-3.jpg"
+                alt="portfolio image"
+              />
+            </div>
+            <div class="px-5 md:flex md:items-end md:justify-between md:pb-5">
+              <div class="">
+                <h3 class="text-xl font-semibold pt-6">Mavrito Lana Dere</h3>
+                <h4 class="py-2 text-sm">
+                  <span class="text-blue-600">Web Design</span> / 18 Sep. 2018
+                </h4>
+              </div>
+              <!-- icon  -->
+              <div class="text-right pb-5 md:pb-2">
+                <a href="#"
+                  ><i
+                    class="fa-solid fa-plus text-3xl text-blue-600 border-2 border-blue-600 rounded-full h-10 w-10 text-center"
+                  ></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <!-- end single card  -->
+          <!-- single card  -->
+          <div class="bg-white group mb-10 md:mb-0">
+            <div class="overflow-hidden">
+              <img
+                class="w-full group-hover:scale-125 duration-700"
+                src="./image/work-4.jpg"
+                alt="portfolio image"
+              />
+            </div>
+            <div class="px-5 md:flex md:items-end md:justify-between md:pb-5">
+              <div class="">
+                <h3 class="text-xl font-semibold pt-6">Bindo Laro Cado</h3>
+                <h4 class="py-2 text-sm">
+                  <span class="text-blue-600">Web Design</span> / 18 Sep. 2018
+                </h4>
+              </div>
+              <!-- icon  -->
+              <div class="text-right pb-5 md:pb-2">
+                <a href="#"
+                  ><i
+                    class="fa-solid fa-plus text-3xl text-blue-600 border-2 border-blue-600 rounded-full h-10 w-10 text-center"
+                  ></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <!-- end single card  -->
+          <!-- single card  -->
+          <div class="bg-white group mb-10 md:mb-0">
+            <div class="overflow-hidden">
+              <img
+                class="w-full group-hover:scale-125 duration-700"
+                src="./image/work-5.jpg"
+                alt="portfolio image"
+              />
+            </div>
+            <div class="px-5 md:flex md:items-end md:justify-between md:pb-5">
+              <div class="">
+                <h3 class="text-xl font-semibold pt-6">Studio Lena Mado</h3>
+                <h4 class="py-2 text-sm">
+                  <span class="text-blue-600">Web Design</span> / 18 Sep. 2018
+                </h4>
+              </div>
+              <!-- icon  -->
+              <div class="text-right pb-5 md:pb-2">
+                <a href="#"
+                  ><i
+                    class="fa-solid fa-plus text-3xl text-blue-600 border-2 border-blue-600 rounded-full h-10 w-10 text-center"
+                  ></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <!-- end single card  -->
+          <!-- single card  -->
+          <div class="bg-white group">
+            <div class="overflow-hidden">
+              <img
+                class="w-full group-hover:scale-125 duration-700"
+                src="./image/work-6.jpg"
+                alt="portfolio image"
+              />
+            </div>
+            <div class="px-5 md:flex md:items-end md:justify-between md:pb-5">
+              <div class="">
+                <h3 class="text-xl font-semibold pt-6">Studio Big Bang</h3>
+                <h4 class="py-2 text-sm">
+                  <span class="text-blue-600">Web Design</span> / 18 Sep. 2017
+                </h4>
+              </div>
+              <!-- icon  -->
+              <div class="text-right pb-5 md:pb-2">
+                <a href="#"
+                  ><i
+                    class="fa-solid fa-plus text-3xl text-blue-600 border-2 border-blue-600 rounded-full h-10 w-10 text-center"
+                  ></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <!-- end single card  -->
+        </div>
+      </div>
+    </section>
+    <!-- portfolio section end -->
+    <!-- testimonial section start  -->
+    <section
+      class="bg-[url('./image/overlay-bg.jpg')] bg-center bg-cover bg-no-repeat bg-fixed z-[1] relative after:absolute after:content-[''] after:left-0 after:top-0 after:h-full after:w-full after:bg-[#0078ff] after:opacity-70 after:z-[-1]"
+    >
+      <div class="w-[90%] mx-auto md:w-4/5 py-32">
+        <div class="text-center">
+          <img
+            class="rounded-full mx-auto"
+            src="./image/testimonial-2.jpg"
+            alt="testimonial image"
+          />
+          <h3 class="text-2xl font-bold uppercase py-6 text-white">
+            Xavi Alonso
+          </h3>
+          <p class="text-lg text-white md:text-xl">
+            Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.
+            Lorem ipsum dolor <br class="hidden md:block" />
+            sit amet, consectetur adipiscing elit.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- testimonial section end -->
+    <!-- blog section start  -->
+    <section id="blog" class="py-20">
+      <div class="w-[90%] mx-auto md:w-4/5">
+        <!-- section title  -->
+        <div class="">
+          <h2 class="text-5xl font-bold text-center text-[#1d1d1d]">BLOG</h2>
+          <p class="py-4 text-center">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+          </p>
+          <div class="bg-[#0078FF] h-1 w-24 mx-auto mb-16"></div>
+        </div>
+        <!-- blog area  -->
+        <div class="md:grid md:grid-cols-3 gap-5">
+          <!-- single card  -->
+          <div class="bg-white border border-gray-300 mb-6 md:mb-0">
+            <div class="relative">
+              <img class="w-full" src="./image/post-1.jpg" alt="blog image" />
+              <span
+                class="absolute text-xs -bottom-3 left-1/2 -translate-x-1/2 py-2 px-3 rounded bg-blue-500 text-white"
+                >TRAVEL</span
+              >
+            </div>
+            <!-- information  -->
+            <div class="px-4">
+              <h3 class="mt-7 text-2xl font-semibold">
+                See more ideas about Travel
+              </h3>
+              <p class="pt-3 mb-7">
+                Proin eget tortor risus. Pellentesque in ipsum id orci porta
+                dapibus. Praesent sapien massa, convallis a pellentesque nec,
+                egestas non nisi.
+              </p>
+            </div>
+            <!-- card footer  -->
+            <div
+              class="border-2 px-4 py-2 bg-[#F8F8F8] flex items-center justify-between"
+            >
+              <div class="flex items-center">
+                <img
+                  class="rounded-full h-8 mr-2"
+                  src="./image/testimonial-2.jpg"
+                  alt="testimonial image"
+                />
+                <a class="hover:text-blue-400 duration-300" href=""
+                  >Morgan Freeman</a
+                >
+              </div>
+              <div class="">
+                <i class="fa-regular fa-clock"></i>
+                <span>10 min</span>
+              </div>
+            </div>
+          </div>
+          <!-- end of single card  -->
+
+          <!-- single card  -->
+          <div class="bg-white border border-gray-300 mb-6 md:mb-0">
+            <div class="relative">
+              <img class="w-full" src="./image/post-2.jpg" alt="blog image" />
+              <span
+                class="absolute text-xs -bottom-3 left-1/2 -translate-x-1/2 py-2 px-3 rounded bg-blue-500 text-white"
+                >WEB DESIGN</span
+              >
+            </div>
+            <!-- information  -->
+            <div class="px-4">
+              <h3 class="mt-7 text-2xl font-semibold">
+                See more ideas about Travel
+              </h3>
+              <p class="pt-3 mb-7">
+                Proin eget tortor risus. Pellentesque in ipsum id orci porta
+                dapibus. Praesent sapien massa, convallis a pellentesque nec,
+                egestas non nisi.
+              </p>
+            </div>
+            <!-- card footer  -->
+            <div
+              class="border-2 px-4 py-2 bg-[#F8F8F8] flex items-center justify-between"
+            >
+              <div class="flex items-center">
+                <img
+                  class="rounded-full h-8 mr-2"
+                  src="./image/testimonial-2.jpg"
+                  alt="testimonial image"
+                />
+                <a class="hover:text-blue-400 duration-300" href=""
+                  >Morgan Freeman</a
+                >
+              </div>
+              <div class="">
+                <i class="fa-regular fa-clock"></i>
+                <span>10 min</span>
+              </div>
+            </div>
+          </div>
+          <!-- end of single card  -->
+
+          <!-- single card  -->
+          <div class="bg-white border border-gray-300">
+            <div class="relative">
+              <img class="w-full" src="./image/post-3.jpg" alt="blog image" />
+              <span
+                class="absolute text-xs -bottom-3 left-1/2 -translate-x-1/2 py-2 px-3 rounded bg-blue-500 text-white"
+                >WEB DESIGN</span
+              >
+            </div>
+            <!-- information  -->
+            <div class="px-4">
+              <h3 class="mt-7 text-2xl font-semibold">
+                See more ideas about Travel
+              </h3>
+              <p class="pt-3 mb-7">
+                Proin eget tortor risus. Pellentesque in ipsum id orci porta
+                dapibus. Praesent sapien massa, convallis a pellentesque nec,
+                egestas non nisi.
+              </p>
+            </div>
+            <!-- card footer  -->
+            <div
+              class="border-2 px-4 py-2 bg-[#F8F8F8] flex items-center justify-between"
+            >
+              <div class="flex items-center">
+                <img
+                  class="rounded-full h-8 mr-2"
+                  src="./image/testimonial-2.jpg"
+                  alt="testimonial image"
+                />
+                <a class="hover:text-blue-400 duration-300" href=""
+                  >Morgan Freeman</a
+                >
+              </div>
+              <div class="">
+                <i class="fa-regular fa-clock"></i>
+                <span>10 min</span>
+              </div>
+            </div>
+          </div>
+          <!-- end of single card  -->
+        </div>
+      </div>
+    </section>
+    <!-- blog section end -->
+    <!-- contact section start  -->
+    <section
+      id="contact"
+      class="bg-[url('./image/overlay-bg.jpg')] bg-center bg-cover bg-no-repeat bg-fixed z-[1] relative after:absolute after:content-[''] after:left-0 after:top-0 after:h-full after:w-full after:bg-[#0078ff] after:opacity-50 after:z-[-1]"
+    >
+      <div class="w-[90%] mx-auto md:w-4/5 py-12">
+        <div class="bg-white py-10 px-6 md:flex md:gap-8">
+          <!-- contact area start  -->
+          <div class="md:w-1/2">
+            <!-- section title  -->
+            <div class="">
+              <h2 class="text-4xl font-normal mb-3 text-[#1d1d1d]">
+                Send Message Us
+              </h2>
+              <div class="bg-[#0078FF] h-1 w-24 mb-16"></div>
+            </div>
+            <!-- form  -->
+            <form action="">
+              <input
+                class="border py-2 px-4 w-full placeholder:text-gray-500 placeholder:text-sm focus:outline-none focus:ring-4 mb-4"
+                type="text"
+                name=""
+                placeholder="Your Name"
+                required
+              />
+              <input
+                class="border py-2 px-4 w-full placeholder:text-gray-500 placeholder:text-sm focus:outline-none focus:ring-4 mb-4"
+                type="email"
+                name=""
+                placeholder="Your Email"
+                required
+              />
+              <input
+                class="border py-2 px-4 w-full placeholder:text-gray-500 placeholder:text-sm focus:outline-none focus:ring-4 mb-4"
+                type="text"
+                name=""
+                placeholder="Your Name"
+                required
+              />
+              <textarea
+                class="border py-3 px-4 w-full placeholder:text-gray-500 placeholder:text-sm focus:outline-none focus:ring-4 h-28"
+                name=""
+                id=""
+                placeholder="Message"
+              ></textarea>
+              <div class="text-center">
+                <button
+                  class="py-3 px-6 rounded-full text-lg text-white font-semibold my-5 bg-blue-600 hover:bg-blue-500 duration-300 hover:ring-4"
+                >
+                  Send Message
+                </button>
+              </div>
+            </form>
+          </div>
+          <!-- contact area end -->
+          <!-- contact information area start  -->
+          <div class="md:w-1/2">
+            <!-- section title  -->
+            <div class="">
+              <h2 class="text-4xl font-normal mb-3 mt-5 md:mt-0 text-[#1d1d1d]">
+                Get in Touch
+              </h2>
+              <div class="bg-[#0078FF] h-1 w-24 mb-16"></div>
+            </div>
+            <!-- information  -->
+            <p class="text-lg text-gray-500">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
+              dolorum dolorem soluta quidem expedita aperiam aliquid at. Totam
+              magni ipsum suscipit amet? Autem nemo esse laboriosam ratione
+              nobis mollitia inventore?
+            </p>
+            <div class="py-5">
+              <!-- 1st  -->
+              <div class="flex items-center mb-3">
+                <i class="fa-solid fa-location-dot text-blue-500"></i>
+                <p class="pl-4">329 WASHINGTON ST BOSTON, MA 02108</p>
+              </div>
+              <!-- 2nd  -->
+              <div class="flex items-center mb-3">
+                <i class="fa-solid fa-mobile-screen-button text-blue-500"></i>
+                <p class="pl-4">(617) 557-0089</p>
+              </div>
+              <!-- 3rd  -->
+              <div class="flex items-center mb-3">
+                <i class="fa-solid fa-envelope text-blue-500"></i>
+                <p class="pl-4">contact@example.com</p>
+              </div>
+            </div>
+            <!-- social icon  -->
+            <div class="flex gap-4">
+              <i
+                class="fa-brands cursor-pointer fa-facebook border-2 h-12 rounded-full w-12 text-center leading-[45px] text-xl border-blue-500"
+              ></i>
+              <i
+                class="fa-brands cursor-pointer fa-instagram border-2 h-12 rounded-full w-12 text-center leading-[45px] text-xl border-blue-500"
+              ></i>
+              <i
+                class="fa-brands cursor-pointer fa-twitter border-2 h-12 rounded-full w-12 text-center leading-[45px] text-xl border-blue-500"
+              ></i>
+              <i
+                class="fa-brands cursor-pointer fa-linkedin border-2 h-12 rounded-full w-12 text-center leading-[45px] text-xl border-blue-500"
+              ></i>
+            </div>
+          </div>
+          <!-- contact information area start  -->
+        </div>
+      </div>
+    </section>
+    <!-- contact section end -->
+    <!-- footer area start  -->
+    <footer class="bg-blue-600 py-5">
+      <div class="">
+        <h3 class="text-white text-center text-lg mb-1 md:mb-0">
+          © Copyright <span class="font-bold">DevFolio.</span> All Rights
+          Reserved
+        </h3>
+        <p class="text-center text-white">Designed by DevFolio</p>
+      </div>
+    </footer>
+    <!-- footer area end -->
+
+    <!-- ===== Javascript =====  -->
+
+    <!-- auto type js  -->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+    <!-- custom js  -->
+    <script src="./js/app.js"></script>
+  </body>
+</html>
